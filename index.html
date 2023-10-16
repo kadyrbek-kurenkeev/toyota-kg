@@ -3,9 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+    <title>ToyotaKG</title>
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font-awasome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- Slick link    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
   <body>
-    <div>Hello world</div>
+    <section class="header" id="header">
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="#">ToyotaKG</a>
+         </div>
+         <div class="menu">
+          <ul>
+            <li><a href="#" class="active">Cars</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Production</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+         </div>
+         <div class="social-media">
+          <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+       </div>
+     </div>
+      <div class="hero">
+        <div class="row">
+
+          <!-- Left section  -->
+
+            <div class="left-sec">
+              <div class="contect">
+                <h2><span>ToyotaKG</span></h2>
+                <p>It is a long established fact that a set reader will destructed by readable content of page when looking at it's layout technology.</p>
+              </div>
+              <button class="discover-btn">
+                <a href="#">Discover</a>
+                <span><i class="fa fa-arrow-circle-o-right"></i></span>
+              </button>
+              <div class="information">
+                <div class="production">
+                  <p>Production</p>
+                  <h2>2016-2023</h2>
+                </div>
+                <div class="production">
+                  <p>Designer</p>
+                  <h2>Jon Jones</h2>
+                </div>
+             </div>
+            </div>
+
+          <!-- Right section  -->
+
+          <div class="right-sec">
+            <div class="my-car">
+              <div><img src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/prs/col/big/b24_adaau_fl1_01m2_a.png?ck=10132023051302" alt=""></div>
+              <div><img src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/cam/col/big/b24_g11ak_fl1_0040_a.png?ck=10132023051304" alt=""></div>
+              <div><img src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/cwn/col/big/b24_cwnafc_fl1_0090_b.png?ck=10132023051304" alt=""></div>
+              <div><img src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/cor/col/big/b24_bprbe_fl1_01f7_a.png?ck=10132023051304" alt=""></div>
+              <div><img src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/mir/col/big/b23_amira_fl1_0090_a.png?ck=10132023051304" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- JS Slick -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+     <script type="text/javascript">
+          $(document).ready(() => {
+        $('.my-car').slick({
+            autoplay: true,
+            autoplaySpeed: 500,
+            dots: true,
+        });
+    });
+     </script>
   </body>
 </html>
